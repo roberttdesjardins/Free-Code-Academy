@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <main id="main">
+      <header id="header">
+        <nav id="nav-bar">
+          <img id="header-img" src="https://via.placeholder.com/350x35" alt="company logo" style="float:right"></img>
+          <a class="nav-link" href="#features-flex-column">Features</a>
+          <a class="nav-link" href="#video">How It Works</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+      </header>
+        <h1 id="title">Handcrafted, home-made masterpieces</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" name="email" type="email" placeholder="Enter your email address">
+          <input id="submit" type="submit" value="Submit">
+        </form>
+        <div id="features-flex-column">
+          <div class="features-flex-row">
+            <img src="https://via.placeholder.com/50x50">
+            <p><strong>Premium Materials</strong><br>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+          <div class="features-flex-row">
+            <img src="https://via.placeholder.com/50x50">
+            <p><strong>Fast Shipping</strong><br>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+          <div class="features-flex-row">
+            <img src="https://via.placeholder.com/50x50">
+            <p><strong>Quality Assurance</strong>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+        </div>
+        <iframe id="video" width="420" height="345" style="display:block; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/y8Yv4pnO7qc"></iframe>
+        <img id="pricing" src="https://via.placeholder.com/350x3500">
+    </main>
+  </body>
+</html>
+
+<style>
+body {
+  background-color: lightgray;
+}
+header {
+  padding-bottom: 50px;
+}
+#nav-bar {
+  background-color: lightgray;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+#form {
+  text-align: center;
+}
+#features-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.features-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  h1 {
+    text-align: left;
+  }
+}
+
+</style>
